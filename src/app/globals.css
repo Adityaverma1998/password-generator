@@ -31,3 +31,31 @@ body {
     text-wrap: balance;
   }
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background: #1d4ed8; /* Tailwind's blue-600 */
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #1d4ed8; /* Tailwind's blue-600 */
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  background: #1d4ed8; /* Tailwind's blue-600 */
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+}
