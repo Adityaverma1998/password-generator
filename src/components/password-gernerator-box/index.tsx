@@ -66,7 +66,7 @@ const PasswordGerneratorBox = () => {
 
     return (
         <>
-            <div className={' p-8 border rounded-lg backdrop-blur bg-amber-300'}>
+            <div className={' p-8 border rounded-lg backdrop-blur h-full bg-amber-300'}>
                 <div className={'w-full'}>
                     <input
                         type="text"
