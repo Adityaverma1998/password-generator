@@ -66,7 +66,7 @@ const PasswordGerneratorBox = () => {
 
     return (
         <>
-            <div className={' p-8 border rounded-lg backdrop-blur h-full bg-amber-300'}>
+            <div className={' p-8 border rounded-lg backdrop-blur h-full bg-amber-300 container-second'}>
                 <div className={'w-full'}>
                     <input
                         type="text"
@@ -112,12 +112,12 @@ const PasswordGerneratorBox = () => {
                     <div className="flex items-center space-x-2">
                         <input
                             type="checkbox"
-                            id="checkbox"
+                            id="checkbox-char"
                             checked={isNumber}
                             onChange={(prev) => setIsNumber(!isNumber)}
                             className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                         />
-                        <label htmlFor="checkbox" className="text-gray-700">
+                        <label htmlFor="checkbox-char" className="text-gray-700">
                             Numbric
                         </label>
                     </div>
