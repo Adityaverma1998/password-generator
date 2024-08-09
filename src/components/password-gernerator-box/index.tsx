@@ -13,10 +13,8 @@ const PasswordGerneratorBox = () => {
 
     const [value, setValue] = React.useState<number>(8);
 
-    const handleSliderChange = (event) => {
-        setValue(event.target.value);
-
-
+    const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setValue(parseInt(event.target.value));
     };
 
     const passwordGenerator = useCallback(() => {
@@ -57,12 +55,13 @@ const PasswordGerneratorBox = () => {
     }, [isNumber, isCharacter, value]);
 
     const handleCopy = () => {
-        if (passwordRef.current) {
-            passwordRef.current.select();
+        const inputElement = passwordRef.current as HTMLInputElement | null;
+        if (inputElement) {
+            inputElement.select();
             document.execCommand('copy');
-            alert('Text copied to clipboard');
-        }    }
-
+            alert('Password copied to clipboard');
+        }
+    };
 
     return (
         <>
